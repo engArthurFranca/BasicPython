@@ -10,7 +10,8 @@ def decimal_to_binary(number: int):
 
 def binary_to_decimal(number: int):
     return sum(
-        [ int(elem)*2**n for n, elem in enumerate(list(str(number)))[::-1] ]
+        [ int(elem)*2**n 
+            for n, elem in enumerate(list(str(number)))[::-1] ]
         )
 
 def convert_number(number: int, is_decimal:bool=True):
